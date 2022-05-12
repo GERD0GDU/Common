@@ -2,7 +2,7 @@
   <a href="https://iocode.co.uk/"><img src="assets/logo.png" height=64></a>
 </p>
 
-## <div align="center"><b><a href="README.md">English</a> | <a href="README_TR.md">Türkçe</a></b></div>
+## <div align="center"><b><a href="README.md">English</a> | <a href="README_TR.md">TÃ¼rkÃ§e</a></b></div>
 
 ioCode.Common C# Library
 ========================
@@ -22,7 +22,7 @@ Classes
 | [ConversionExtensions](#iocodecommonconversionextensions) | Converts the string representation of a number to sbyte, short, int, long, decimal, double, float, byte, ushort, uint, long. |
 | [Extensions](#iocodecommonextensions) | Provides extended methods for general uses. |
 | [Macro](#iocodecommonmacro) | A class that outputs strings by compiling specified custom date-time formats. |
-| [MathExtensions](#iocodemathextensions) | It provides extended methods for variables sbyte, short, int, long, decimal, double, float, byte, ushort, uint, long, TimeSpan, DateTime that enforce minimum and maximum range. |
+| [MathExtensions](#iocodecommonmathextensions) | It provides extended methods for variables sbyte, short, int, long, decimal, double, float, byte, ushort, uint, long, TimeSpan, DateTime that enforce minimum and maximum range. |
 
 ioCode.Common.ConversionExtensions
 ----------------------------------
@@ -831,7 +831,7 @@ public static int IndexOf<T>(this System.Collections.IEnumerable source, T item)
 
 #### Return
 [Int32](https://docs.microsoft.com/en-US/dotnet/api/system.int32) <br>
-The zero-based index of the first occurrence of an element that matches the conditions defined by match, if found; otherwise, –1.
+The zero-based index of the first occurrence of an element that matches the conditions defined by match, if found; otherwise, Â–1.
 
 ioCode.Common.Macro
 -------------------
