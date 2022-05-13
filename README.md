@@ -374,6 +374,27 @@ Console output will be as follows.
 ioCode.Common.Extensions
 ------------------------
 
+Provides extended methods for general uses.
+
+### Methods
+
+| Method | Description |
+| :--- | :--- |
+| [IsNull\<T\>(T)](#isnullt-method) | Tests whether any object is null. Same as "obj is null". |
+| [IsNotNull\<T\>(T)](#isnotnullt-method) | Tests whether any object is not null. Same as "!(obj is null)". |
+| [IsNullOrEmpty(IEnumerable)](#isnullorempty-method) | Tests whether any object derived from the "[System.Collections.IEnumerable](https://docs.microsoft.com/en-US/dotnet/api/system.collections.ienumerable)" interface is null or empty. |
+| [ToSafeString(Object)](#tosafestring-method) | It's like ToString() but doesn't throw an exception even if the object is null. |
+| [Left(String, Int32)](#left-method) | Returns a string of the specified length from the left of the string. It's like "[System.String.Substring](https://docs.microsoft.com/en-US/dotnet/api/system.string.substring)(0, length)" but it doesn't throw an exception. |
+| [Right(String, Int32)](#right-method) | Returns a string of the specified length from the rigth of the string. |
+| [Mid(String, Int32, Int32)](#mid-method) | Retrieves a substring from this instance. The substring starts at a specified character position and has a specified length. |
+| [RemoveNewLines(String)](#removenewlines-method) | Replace '\r\n' characters in string with spaces. |
+| [Replace(String, String\[\], String\[\], StringComparison)](#replace-method) | A comparison option is provided for replacement operations. |
+| [Replace(String, String\[\], String\[\], bool)](#replace-method) | A case sensitivity option is provided for replacement operations. |
+| [Replace(String, String\[\], String\[\])](#replace-method) | It does a case sensitive replacement. |
+| [ToMessagees(Exception)](#tomessages-method) | Returns all exception messages. Including internal exceptions. |
+| [SafeClone\<T\>(T)](#safeclonet-method) | It is like the 'Clone' method. It will not throw an exception for an object that is 'null'. |
+| [IndexOf\<T\>(IEnumerable, T)](#indexoft-method) | Searches for the specified object and returns the index of the first occurrence within the entire one-dimensional [IEnumerable](https://docs.microsoft.com/en-US/dotnet/api/system.collections.ienumerable). |
+
 ### IsNull\<T\> Method
 
 #### Definition
