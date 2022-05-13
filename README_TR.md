@@ -861,7 +861,7 @@ Belirtilen özel tarih-saat biçimlerini derleyerek metin tipinde çıktı veren
 Ad Alanı: ioCode.Common  <br>
 Bütünleştirilmiş Kod: ioCode.Common.dll
 
-#### Properties
+#### Özellikler
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | **Current** | Macro | Geçerli sınıfın genel statik örneğini sunan bir özellik. |
@@ -936,7 +936,7 @@ ioCode.Common.MathExtensions
 
 Minimum ve maksimum aralığı zorlayan sbyte, short, int, long, decimal, double, float, byte, ushort, uint, long, TimeSpan, DateTime değişkenleri için genişletilmiş yöntemler sağlar.
 
-### Overload Methods
+### Aşırı Yüklenmiş Yöntemler
 
 | Yöntem | Açıklama |
 | :--- | :--- |
@@ -966,7 +966,7 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine("({0}).Range({1}, {2}) --> {3}", nVal, nFirst, nLast, nVal.Range(nFirst, nLast));
 }
 ```
-Console Output:
+Konsol Çıktısı:
 ```
 (8306).Range(3500, -2369) --> 3500
 (3024).Range(-2364, 3872) --> 3024
