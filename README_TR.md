@@ -374,6 +374,25 @@ Konsol çıktısı aşağıdaki gibi olacaktır.
 ioCode.Common.Extensions
 ------------------------
 
+Genel kullanımlar için genişletilmiş yöntemler sağlar.
+
+| Yöntem | Açıklama |
+| :--- | :--- |
+| [IsNull\<T\>(T)](#isnullt-yöntem) | Herhangi bir nesnenin tanımsız olup olmadığını test eder. "obj is null" ile aynıdır. |
+| [IsNotNull\<T\>(T)](#isnotnullt-yöntem) | Herhangi bir nesnenin tanımlı olup olmadığını test eder. "!(obj is null)" ile aynıdır. |
+| [IsNullOrEmpty(IEnumerable)](#isnullorempty-yöntem) | "[System.Collections.IEnumerable](https://docs.microsoft.com/tr-TR/dotnet/api/system.collections.ienumerable)" arabiriminden türetilen herhangi bir nesnenin boş olup olmadığını test eder. |
+| [ToSafeString(Object)](#tosafestring-yöntem) | ToString() gibidir, ancak nesne tanımsız olsa bile herhangi bir hata oluşturmaz. |
+| [Left(String, Int32)](#left-yöntem) | Dizenin solundan itibaren belirtilen uzunlukta bir dize döndürür. "[System.String.Substring](https://docs.microsoft.com/tr-TR/dotnet/api/system.string.substring)" kullanımı gibidir ancak herhangi bir hata döndürmez. |
+| [Right(String, Int32)](#right-yöntem) | Dizenin sağından belirtilen uzunlukta bir dize döndürür. |
+| [Mid(String, Int32, Int32)](#mid-yöntem) | Bu örnekten bir alt dize alır. Alt dize, belirli bir karakter konumunda başlar ve belirli bir uzunluğa sahiptir. |
+| [RemoveNewLines(String)](#removenewlines-yöntem) | Dizedeki '\r\n' karakterlerini boşluklarla değiştirir. |
+| [Replace(String, String[], String[], StringComparison)](#replace-yöntem) | Değiştirme işlemleri için bir karşılaştırma seçeneği sunulur. |
+| [Replace(String, String[], String[], bool)](#replace-yöntem) | Değiştirme işlemleri için büyük/küçük harf duyarlılığı seçeneği sağlanır. |
+| [Replace(String, String[], String[])](#replace-yöntem) | Büyük/küçük harfe duyarlı bir değiştirme yapar. |
+| [ToMessages(Exception)](#tomessages-yöntem) | Dahili istisnalar dahil tüm hata mesajlarını döndürür. |
+| [SafeClone\<T\>(T)](#safeclonet-yöntem) | 'Clone' yöntemi gibidir. 'Tanımsız' olan bir nesne için bir hata döndürmez. |
+| [IndexOf\<T\>(IEnumerable, T)](#indexoft-yöntem) | Belirtilen nesneyi arar ve tek boyutlu [IEnumerable](https://docs.microsoft.com/tr-TR/dotnet/api/system.collections.ienumerable) içindeki ilk öğenin sıra numarasını döndürür. |
+
 ### IsNull\<T\> Yöntem
 
 #### Tanım
@@ -530,7 +549,7 @@ s = "blabla";
 Ad Alanı: ioCode.Common  <br>
 Bütünleştirilmiş Kod: ioCode.Common.dll
 
-Dizenin solundan itibaren belirtilen uzunlukta bir dize döndürür. "[System.String.Substring](https://docs.microsoft.com/tr-TR/dotnet/api/system.string.substring)(0, uzunluk)" kullanımı gibidir ancak herhangi bir hata döndürmez.
+Dizenin solundan itibaren belirtilen uzunlukta bir dize döndürür. "[System.String.Substring](https://docs.microsoft.com/tr-TR/dotnet/api/system.string.substring)" kullanımı gibidir ancak herhangi bir hata döndürmez.
 ```csharp
 public static string Left(this string s, int length)
 ```
