@@ -384,7 +384,7 @@ Provides extended methods for general uses.
 | [IsNotNull\<T\>(T)](#isnotnullt-method) | Tests whether any object is not null. Same as "!(obj is null)". |
 | [IsNullOrEmpty(IEnumerable)](#isnullorempty-method) | Tests whether any object derived from the "[System.Collections.IEnumerable](https://docs.microsoft.com/en-US/dotnet/api/system.collections.ienumerable)" interface is null or empty. |
 | [ToSafeString(Object)](#tosafestring-method) | It's like ToString() but doesn't throw an exception even if the object is null. |
-| [Left(String, Int32)](#left-method) | Returns a string of the specified length from the left of the string. It's like "[System.String.Substring](https://docs.microsoft.com/en-US/dotnet/api/system.string.substring)(0, length)" but it doesn't throw an exception. |
+| [Left(String, Int32)](#left-method) | Returns a string of the specified length from the left of the string. It's like "[System.String.Substring](https://docs.microsoft.com/en-US/dotnet/api/system.string.substring)" but it doesn't throw an exception. |
 | [Right(String, Int32)](#right-method) | Returns a string of the specified length from the rigth of the string. |
 | [Mid(String, Int32, Int32)](#mid-method) | Retrieves a substring from this instance. The substring starts at a specified character position and has a specified length. |
 | [RemoveNewLines(String)](#removenewlines-method) | Replace '\r\n' characters in string with spaces. |
@@ -551,7 +551,7 @@ s = "blabla";
 Namespace: ioCode.Common  <br>
 Assembly: ioCode.Common.dll
 
-Returns a string of the specified length from the left of the string. It's like "[System.String.Substring](https://docs.microsoft.com/en-US/dotnet/api/system.string.substring)(0, length)" but it doesn't throw an exception.
+Returns a string of the specified length from the left of the string. It's like "[System.String.Substring](https://docs.microsoft.com/en-US/dotnet/api/system.string.substring)" but it doesn't throw an exception.
 ```csharp
 public static string Left(this string s, int length)
 ```
