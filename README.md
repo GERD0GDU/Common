@@ -831,7 +831,7 @@ public static int IndexOf<T>(this System.Collections.IEnumerable source, T item)
 
 #### Return
 [Int32](https://docs.microsoft.com/en-US/dotnet/api/system.int32) <br>
-The zero-based index of the first occurrence of an element that matches the conditions defined by match, if found; otherwise, 1.
+The zero-based index of the first occurrence of an element that matches the conditions defined by match, if found; otherwise, -1.
 
 ioCode.Common.Macro
 -------------------
