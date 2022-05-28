@@ -391,7 +391,7 @@ Provides extended methods for general uses.
 | [Replace(String, String\[\], String\[\], StringComparison)](#replace-method) | A comparison option is provided for replacement operations. |
 | [Replace(String, String\[\], String\[\], bool)](#replace-method) | A case sensitivity option is provided for replacement operations. |
 | [Replace(String, String\[\], String\[\])](#replace-method) | It does a case sensitive replacement. |
-| [ToMessagees(Exception)](#tomessages-method) | Returns all exception messages. Including internal exceptions. |
+| [ToMessages(Exception)](#tomessages-method) | Returns all exception messages. Including internal exceptions. |
 | [SafeClone\<T\>(T)](#safeclonet-method) | It is like the 'Clone' method. It will not throw an exception for an object that is 'null'. |
 | [IndexOf\<T\>(IEnumerable, T)](#indexoft-method) | Searches for the specified object and returns the index of the first occurrence within the entire one-dimensional [IEnumerable](https://docs.microsoft.com/en-US/dotnet/api/system.collections.ienumerable). |
 
